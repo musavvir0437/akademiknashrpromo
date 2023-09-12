@@ -17,8 +17,20 @@ body {
   background-color: #ffff;
 }
 
+.logo-link {
+  transition: opacity 0.4s ease;
+}
 
-.site-header-actions{
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:active {
+  opacity: 0.6;
+}
+
+
+.site-header-actions {
   display: flex;
   align-items: center;
 }
@@ -37,6 +49,16 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  transition: color 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.sitenav-link:hover {
+  color: #ff7500;
+}
+
+.sitenav-link:active {
+  opacity: 0.6;
 }
 
 
@@ -54,6 +76,15 @@ body {
   background-color: #ff7500;
   color: #ffff;
   text-decoration: none;
+  transition: opacity 0.4s ease;
+}
+
+.main-link:hover {
+  opacity: 0.8;
+}
+
+.main-link:active {
+  opacity: 0.8;
 }
 
 /* hero */
@@ -79,7 +110,7 @@ body {
 .hero-heading {
   font-size: 40px;
   line-height: 1.2;
-  font-family: 'Roboto Condensed',"Arial", sans-serif;
+  font-family: 'Roboto Condensed', "Arial", sans-serif;
 }
 
 .hero-img {
@@ -95,11 +126,11 @@ body {
 
 
 
- .features-list{
+.features-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
- }
+}
 
 /* features */
 
@@ -107,10 +138,10 @@ body {
   width: 440px;
   font-size: 72px;
   line-height: 1.2;
-  font-family: "Roboto Condensed","Roboto","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
   letter-spacing: 0.5px;
 }
- 
+
 
 .feature {
   width: 340px;
@@ -125,7 +156,7 @@ body {
 }
 
 
-.feature-title{
+.feature-title {
   font-size: 24px;
   line-height: 1.2;
   font-family: 'Roboto Condensed', sans-serif;
@@ -154,7 +185,7 @@ body {
   width: 440px;
 }
 
-.promo-heading{
+.promo-heading {
   font-size: 40px;
   line-height: 48px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -180,14 +211,14 @@ body {
 
 .site-footer {
   background-color: #f8f8f8f8;
-  
+
 }
 
 
 
 
 
-.site-footer-top{
+.site-footer-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -199,9 +230,21 @@ body {
   list-style: none;
 }
 
-.site-footer-socials{
+.site-footer-socials {
   display: flex;
   align-items: center;
+}
+
+.site-footer-socials a {
+  color: #252420;
+}
+
+.site-footer-socials a:hover {
+  color: #ff7500;
+}
+
+.site-footer-socials a:active {
+  opacity: 0.6;
 }
 
 .site-footer-divider {
@@ -210,7 +253,7 @@ body {
 }
 
 
-.site-footer-bottom{
+.site-footer-bottom {
   display: flex;
 }
 
@@ -225,4 +268,14 @@ body {
   line-height: 19px; */
   color: #252420;
   text-decoration: none;
+
+}
+
+
+.site-footer-links a:hover {
+  color: #ff7500;
+}
+
+.site-footer-links a:focus {
+  opacity: 0.6;
 }

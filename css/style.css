@@ -19,6 +19,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 5px solid #ff7500;
   background-color: #ffff;
 }
 
@@ -45,6 +48,7 @@ body {
 .sitenav-list {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .sitenav-link {
@@ -75,7 +79,11 @@ body {
 /* main-link */
 
 .main-link {
+  display: inline-block;
+ padding: 12px 24px;
+  border-radius: 4px;
   font-size: 13px;
+  font-weight: bold;
   /* font-weight: 700; */
   line-height: 15px;
   background-color: #ff7500;
@@ -97,6 +105,8 @@ body {
 .hero {
   display: flex;
   align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
   justify-content: space-between;
   background-color: #252420;
   color: white;
@@ -110,6 +120,7 @@ body {
   width: 80px;
   height: 3px;
   background-color: #ff7500;
+  border: none;
 }
 
 .hero-heading {
@@ -121,6 +132,7 @@ body {
 .hero-img {
   width: 510px;
   height: 510px;
+  border-radius: 15px ;
 }
 
 /* .hero-text{
@@ -135,9 +147,32 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding: 0;
 }
 
 /* features */
+.feature {
+  width: 340px;
+}
+
+
+.features-icon-wrapper {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50% ;
+  background-color: rgb(255, 117, 0, 0.2);
+
+}
+
+
+
+.features{
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
 
 .features-heading {
   width: 440px;
@@ -147,18 +182,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-
-.feature {
-  width: 340px;
-}
-
-
-.features-icon-wrapper {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(255, 117, 0, 0.2);
-
-}
 
 
 .feature-title {
@@ -182,6 +205,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 12px;
   background-color: #252420;
   color: #fff;
 }
@@ -208,6 +232,7 @@ body {
 .promo-img {
   width: 440px;
   height: 440px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -215,6 +240,8 @@ body {
 
 
 .site-footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
   background-color: #f8f8f8f8;
 
 }
@@ -233,11 +260,13 @@ body {
 
 .site-footer ul {
   list-style: none;
+  padding: 0;
 }
 
 .site-footer-socials {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .site-footer-socials a {
@@ -254,6 +283,7 @@ body {
 
 .site-footer-divider {
   height: 2px;
+  border: none;
   background-color: rgb(37, 36, 32, 0.5);
 }
 

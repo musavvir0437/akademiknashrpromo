@@ -7,6 +7,11 @@ body {
 
 }
 
+*:focus {
+  outline: 2px dotted #ff7500;
+  outline-offset: 3px;
+}
+
 
 /* site-headr  */
 
@@ -276,6 +281,6 @@ body {
   color: #ff7500;
 }
 
-.site-footer-links a:focus {
+.site-footer-links a:active {
   opacity: 0.6;
 }

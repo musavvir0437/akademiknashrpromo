@@ -1,5 +1,13 @@
-body {
+* {
+  box-sizing: border-box;
+}
 
+
+
+
+body {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
@@ -16,13 +24,29 @@ body {
 /* site-headr  */
 
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   padding-top: 16px;
   padding-bottom: 16px;
   border-top: 5px solid #ff7500;
   background-color: #ffff;
+}
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* container */
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-link {
@@ -38,7 +62,7 @@ body {
 }
 
 
-.logo-link img{
+.logo-link img {
   display: block;
 }
 
@@ -58,11 +82,11 @@ body {
 
 }
 
-.sitenav-item{
+.sitenav-item {
   margin-right: 32px;
 }
 
-.sitenav-item:last-child{
+.sitenav-item:last-child {
   margin-right: 0;
 }
 
@@ -96,7 +120,7 @@ body {
 
 .main-link {
   display: inline-block;
- padding: 12px 24px;
+  padding: 12px 24px;
   border-radius: 4px;
   font-size: 13px;
   font-weight: bold;
@@ -119,13 +143,18 @@ body {
 /* hero */
 
 .hero {
-  display: flex;
-  align-items: center;
+
   padding-top: 80px;
   padding-bottom: 80px;
-  justify-content: space-between;
+
   background-color: #252420;
   color: white;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero-content {
@@ -149,7 +178,7 @@ body {
   font-family: 'Roboto Condensed', "Arial", sans-serif;
 }
 
-.hero-text{
+.hero-text {
   margin-top: 0;
   margin-bottom: 32px;
 }
@@ -157,7 +186,8 @@ body {
 .hero-img {
   width: 510px;
   height: 510px;
-  border-radius: 15px ;
+  border-radius: 15px;
+  box-shadow: 24px 24px 0 0 rgb(255, 117, 0, 0.6);
 }
 
 /* .hero-text{
@@ -182,7 +212,7 @@ body {
   margin-right: 40px;
 }
 
-.feature:last-child{
+.feature:last-child {
   margin-right: 0;
 }
 
@@ -193,14 +223,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius:50% ;
+  margin-bottom: 32px;
+  border-radius: 50%;
   background-color: rgb(255, 117, 0, 0.2);
 
 }
 
+.feature-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: 'Roboto Condensed', sans-serif;
+  /* letter-spacing: 0.5px; */
+}
+
+.feature-info {
+  margin: 0;
+}
 
 
-.features{
+
+
+.features {
   padding-top: 210px;
   padding-bottom: 210px;
 }
@@ -217,12 +262,6 @@ body {
 
 
 
-.feature-title {
-  font-size: 24px;
-  line-height: 1.2;
-  font-family: 'Roboto Condensed', sans-serif;
-  /* letter-spacing: 0.5px; */
-}
 
 
 
@@ -235,9 +274,17 @@ body {
 /* promo */
 
 .promo {
+  padding-top: 120px;
+  padding-bottom: 160px;
+
+
+}
+
+.promo-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 64px;
   border-radius: 12px;
   background-color: #252420;
   color: #fff;
@@ -249,24 +296,25 @@ body {
 
 .promo-heading {
   margin-top: 0;
-  margin-bottom:24 ;
+  margin-bottom: 24;
   font-size: 40px;
   line-height: 48px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 
-.promo-info-wrapper{
+.promo-info-wrapper {
   margin-bottom: 24px;
 }
-.promo-text{
-   margin-top: 0;
-   margin-bottom: 12px;
+
+.promo-text {
+  margin-top: 0;
+  margin-bottom: 12px;
   /* font-size: 16px;
   line-height: 1.5; */
 }
 
-.promo-text:last-child{
+.promo-text:last-child {
   margin-bottom: 0;
 }
 
@@ -318,12 +366,12 @@ body {
 /* img blog */
 
 
-.site-footer-socials li{
+.site-footer-socials li {
   margin-right: 16px;
 
 }
 
-.site-footer-socials li:last-child{
+.site-footer-socials li:last-child {
   margin-right: 0;
 }
 
@@ -340,8 +388,8 @@ body {
   opacity: 0.6;
 }
 
-.site-footer-socials svg{
-display: block;
+.site-footer-socials svg {
+  display: block;
 }
 
 .site-footer-divider {
@@ -367,8 +415,8 @@ display: block;
 
 }
 
-.site-footer-links:last-child{
-margin-right: 0;
+.site-footer-links:last-child {
+  margin-right: 0;
 }
 
 
@@ -383,6 +431,14 @@ margin-right: 0;
 
 .site-footer-links a:hover {
   color: #ff7500;
+}
+
+.site-footer-links li {
+  margin-bottom: 16px;
+}
+
+.site-footer-links:last-child {
+  margin-bottom: 0;
 }
 
 .site-footer-links a:active {
